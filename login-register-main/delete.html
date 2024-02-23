@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>forms</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+<link href="css/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="css/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        // Attach a click event handler to the button
+        $("#submit").click(function(){
+            // Set the URL to the page you want to navigate to
+            window.location.href = "sample.html";
+        });
+    });
+</script>
+</head>
+<body style="background:url('Purple and Blue Lofi Pastel Dreams Party Music YouTube Channel Art.png'); background-size:cover;">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="formstudent.php" method="post">
+                            <div class="form-group">
+                                <label for="name">Candidate Name</label><br>
+                                <input type="text" class="form-control" name="name" placeholder="Enter  your  name" id="name" required><br>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">DOB</label><br>
+                                <input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy" id="dob" required><br>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="mobile">Mobile Number</label><br>
+                                        <input type="number" name="mobile" class="form-control" placeholder="+916381423356" id="mobile" aria-describedby="phonehelp" required>
+                                        <small id="phonehelp" class="form-text text-muted">we won't share your number with anyone else!</small><br><br> 
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="email">Email</label><br>
+                                        <input type="email" name="email" class="form-control" placeholder="+you123@gmail.com" id="email" aria-describedby="emailhelp" required>
+                                        <small id="emailhelp" class="form-text text-muted">we won't share your email with anyone else!</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="password">10th percentage</label><br>
+                                        <input type="text" name="10per" class="form-control" placeholder="" id="password" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="confirm_password">12th percentage</label><br>
+                                        <input type="password" name="12per" class="form-control" placeholder="" id="confirm_password" required>
+                                    </div>
+                                </div>                     
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label><br>
+                                <input type="text" class="form-control" name="address" placeholder="Enter  your  address" id="address" required><br>
+                            </div>
+                        
+
+                            
+
+                            
+                            <div class="form-group">  
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="termsAgreement" required value="termsAgreement">
+                                    <label for="termsAgreement" class="form-check-label">I agree to terms and conditions </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="reset" class="btn btn-secondary">Reset</button>
+                                <button name="submit" type="submit" class="btn btn-success">Submit</button>
+                            </div>    
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div> 
+    </div>
+</body>
+</html>
+modify the above code and style it  using boostrap

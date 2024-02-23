@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#submit").click(function(){
+                window.location.href = "sample.html";
+            });
+        });
+    </script>
+</head>
+<body style="background:url('Purple and Blue Lofi Pastel Dreams Party Music YouTube Channel Art.png'); background-size:cover;">
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <form action="formstudent.php" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Candidate Name</label>
+                            <input type="text" class="form-control" name="name" placeholder="Enter your name" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dob" class="form-label">DOB</label>
+                            <input type="date" class="form-control" name="dob" id="dob" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mobile" class="form-label">Mobile Number</label>
+                            <input type="number" name="mobile" class="form-control" placeholder="+916381423356" id="mobile" aria-describedby="phonehelp" required>
+                            <small id="phonehelp" class="form-text text-muted">We won't share your number with anyone else!</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="+you123@gmail.com" id="email" aria-describedby="emailhelp" required>
+                            <small id="emailhelp" class="form-text text-muted">We won't share your email with anyone else!</small>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="password" class="form-label">10th Percentage</label>
+                                <input type="text" name="10per" class="form-control" id="password" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="confirm_password" class="form-label">12th Percentage</label>
+                                <input type="password" name="12per" class="form-control" id="confirm_password" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" name="address" placeholder="Enter your address" id="address" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="termsAgreement" required value="termsAgreement">
+                            <label for="termsAgreement" class="form-check-label">I agree to terms and conditions</label>
+                        </div>
+                        <div class="mb-3">
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+                            <button name="submit" type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
